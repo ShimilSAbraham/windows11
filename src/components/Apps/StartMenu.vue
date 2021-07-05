@@ -13,7 +13,7 @@ export default {
 <style scoped>
     .startMenu{
         position: absolute;
-        top: -81vh;
+        bottom: 55px;
         width: 36vw;
         border-radius: 10px;
         height: 80vh;

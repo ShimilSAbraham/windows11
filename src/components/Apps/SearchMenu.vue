@@ -13,7 +13,7 @@ export default {
 <style scoped>
     .searchMenu{
         position: absolute;
-        top: -82vh;
+        bottom: 55px;
         width: 36vw;
         border-radius: 10px;
         height: 80vh;

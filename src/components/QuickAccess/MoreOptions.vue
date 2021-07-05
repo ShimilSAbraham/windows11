@@ -25,11 +25,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .moreOptions {
         position: absolute;
-        top: -235%;
-        left: -27%;
+        bottom: 51px;
+        right: 61%;
 
         width: 150px;
         height: 100px;

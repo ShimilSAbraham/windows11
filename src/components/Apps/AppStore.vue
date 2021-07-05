@@ -1,6 +1,6 @@
 <template>
   <div class="appStore">
-    <AppStoreHeader />
+    <AppStoreHeader @close="$emit('close')"/>
     <AppStoreMenu />
     <AppStoreMain />
   </div>
@@ -18,6 +18,7 @@ export default {
     AppStoreMenu,
     AppStoreMain,
   },
+  emits: ['close'],
 };
 </script>
 
@@ -38,7 +39,7 @@ export default {
   border-radius: 15px;
   background: #171617e0;
   position: absolute;
-  top: -89vh;
+  bottom: 55px;
 
   border: var(--border);
   z-index: -5;

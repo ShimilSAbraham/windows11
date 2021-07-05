@@ -1,8 +1,10 @@
 <template>
     <div class="mobile">
-		<div class="mobTime">{{time}}</div>
-		<div class="mobDate"> {{date}} </div>
-		<div class="mobDay">{{day}}</div>
+        <div class="mobCalendar">
+            <div class="mobTime">{{time}}</div>
+            <div class="mobDay">{{day}}</div>
+            <div class="mobDate"> {{date}} </div>
+        </div>
 
         <div class="cube">
             <div class="front blue-l"></div>
@@ -48,39 +50,47 @@ export default {
             display: none !important;
         }
         .mobile{
-            /* background: #000; */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
 
-            margin-top: 30%;
+            margin-top: 100px;
             font-size: 1.1rem;
-            height: 20vh;
+            height: 80%;
+        }
+        .mobile .mobCalendar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #333;
+            height: 30%;
         }
         .mobile .mobTime{
+            background: #000;
             font-size: 4.5rem;
             font-weight: 600;
         }
-        .mobile .mobDate{
-            margin-top: -5%;
+        .mobile .mobDay{
+            margin-top: -15px;
         }
-
+        .mobile .mobDate{
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
         .mobile .cube{
-            position: absolute;
-            top: 45%;
+            align-self: center;
         }
 
         .mobile .mobMessage{
-            position: absolute;
 
-            bottom: 10%;
             font-size: 1.7rem;
             font-weight: 800;
             width: 70%;
             line-height: 2.3rem;
 
-            text-shadow: -3px -3px 2px rgba(0, 0, 0, 0.247);
+            text-shadow: -3px -3px 2px rgba(0, 0, 0, 0.493);
             color: #cacdd6;
             letter-spacing: 1.5px;
         }

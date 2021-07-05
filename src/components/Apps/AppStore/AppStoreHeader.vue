@@ -15,7 +15,13 @@
     </div>
 
     <div class="control-btns">
-      <div class="btn" v-for="(icon, index) in ctrlBtn" :key="icon" v-html="icon" @click="closeStore(index)"></div>
+      <div
+        class="btn"
+        v-for="(icon, index) in ctrlBtn"
+        :key="icon"
+        v-html="icon"
+        @click="closeStore(index)"
+      ></div>
     </div>
   </div>
 </template>
@@ -34,15 +40,11 @@ export default {
   },
   methods: {
     closeStore(icon){
-      if(icon === 1)
-      {
-        this.$emit('close',7)
-      }
-      else
-        this.$emit('close',0)
-    }
-  },
-};
+      if(icon != 1)
+        this.$emit('close')
+    },
+  }
+}
 </script>
 
 <style scoped>

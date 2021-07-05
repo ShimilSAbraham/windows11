@@ -32,7 +32,7 @@
 
             <div class="appsContainer" @click="shootThat(7)"> <img src="../assets/svg/Microsoft_Store.svg" alt="Microsoft_Store"/> </div>
             <transition name="pop">
-                <AppStore v-if="value === 7" @close="closeStore" />
+                <AppStore v-if="value === 7" @close="closeThis" />
             </transition>
 
             <div class="appsContainer" @click="shootThat(8)"> <img class="settingsIcon" src="../assets/svg/settings.svg" alt="Settings"/> </div>
@@ -72,13 +72,9 @@ import AppStore from './Apps/AppStore.vue'
                 else
                     this.value=id
             },
-            makeThisFalse(){
+            closeThis(){
                 this.value=0
             },
-            closeStore(value){
-                console.log(value)
-                this.value=value
-            }
         }
     }
 </script>
@@ -117,7 +113,7 @@ import AppStore from './Apps/AppStore.vue'
     }
     /* app icons */
     .apps .appsContainer img {
-    width: 1.4rem;
+    width: 22px;
     transition: transform 0.2s ease;
     }
     .apps .appsContainer .settingsIcon {

@@ -7,17 +7,17 @@
             </transition>
 
           <div class="accessContainer" @click="shootThat(2)"> <img src="../assets/svg/battery-75.svg" alt="battery-75" /> </div>
-            <transition name="pop">
+            <transition name="right-slide">
               <BatterySettings v-if="value === 2" />
             </transition>
 
           <div class="accessContainer" @click="shootThat(3)"> <i class="fas fa-wifi"></i> </div>
-            <transition name="pop">
+            <transition name="right-slide">
               <NetworkSettings v-if="value === 3" />
             </transition>
 
           <div class="accessContainer" @click="shootThat(4)"> <i class="fal fa-volume-up"></i> </div>
-            <transition name="pop">
+            <transition name="right-slide">
               <VolumeSettings v-if="value === 4" />
             </transition>
 
@@ -28,7 +28,7 @@
           </div>
 
           <div class="accessContainer" @click="shootThat(5)"> <i class="fal fa-comment-alt"></i> </div>
-            <transition name="pop">
+            <transition name="right-slide">
               <Notifications v-if="value === 5" />
             </transition>
 
@@ -74,11 +74,11 @@ export default {
 
 /* quick access container */
 .quickAccess{
-    --main-bg: #171617f0;
-    --quick-access-hover: rgba(255, 255, 255, 0.15);
-    --fg: #d6d6d6;
-    --border: 2px solid rgba(49, 46, 46, 0.404);
-    --bg: #201f20;
+  --main-bg: #171617f0;
+  --quick-access-hover: rgba(255, 255, 255, 0.15);
+  --fg: #d6d6d6;
+  --border: 2px solid rgba(49, 46, 46, 0.404);
+  --bg: #201f20;
 
 }
 .access {
@@ -96,7 +96,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 25px;
-  height: 100%;
+  height: 85%;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -120,7 +120,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   width: 80px;
-  height: 100%;
+  height: 90%;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Calibri", sans-serif;
@@ -173,10 +173,14 @@ export default {
 /* division at the end */
 .access .home {
   cursor: pointer;
+  transition: 0.5s;
   transform: translateX(5px);
   width: 10px;
   border-radius: 3px;
-  height: 100%;
+  height: 80%;
+  border-left: none;
+}
+.access .home:hover {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
 

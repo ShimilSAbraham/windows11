@@ -80,6 +80,7 @@ body{
     transition: transform 1.5s ease;
 }
 
+
 .left-slide-enter-from,.left-slide-leave-to {
     transform: translateX(-120%);
 }
@@ -92,7 +93,6 @@ body{
 .left-slide-leave-active {
     transition: transform 1.5s ease;
 }
-
 
 /* Quick Access Transitions */
 
@@ -109,3 +109,15 @@ body{
     transition: transform 1.5s ease;
 }
 
+.right-slide-enter-from,.right-slide-leave-to {
+    transform: translateX(120%);
+}
+.right-slide-enter-to,.right-slide-leave-from {
+    transform: translateX(0%);
+}
+.right-slide-enter-active {
+    transition: transform 1.5s 0.2s ease;
+}
+.right-slide-leave-active {
+    transition: transform 1.5s ease;
+}

@@ -13,7 +13,7 @@ export default {
 <style scoped>
     .settings{
         position: absolute;
-        top: -88vh;
+        bottom: 55px;
         width: 60vw;
         border-radius: 10px;
         height: 85vh;
