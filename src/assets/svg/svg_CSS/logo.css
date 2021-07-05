@@ -1,0 +1,14 @@
+#win_logo{
+	transition: 0.1s ease;
+}
+#win_logo:active{
+	transform-origin: center;
+	animation: winLogo 0.1s forwards ease;
+}
+
+@keyframes winLogo{
+    0%{transform: scale(1);}
+    50%{transform: scale(0.5);}
+	100%{transform: scale(1);}
+	
+}

@@ -1,0 +1,111 @@
+/* ---------------- FONTS --------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+/* ---------------- COLORS --------------------- */
+:root{
+    /* video's background variables */
+    --video-bg: #030f1f;
+    --video-bg-gradient: radial-gradient(circle,#081832 15%,#030f1f 53%,#000a16 83%);
+
+}
+
+
+.greenGradient{
+    --gradientBg: linear-gradient(45deg, #3b6d69, #2dae5f);
+    background-image: var(--gradientBg);
+}
+.seeOffGradient{
+    --gradientBg: linear-gradient(45deg, #dd5a32, #df60a8);
+    background-image: var(--gradientBg);
+}
+.clearSkyGradient{
+    --gradientBg: linear-gradient( 45deg,  #435bac, #178da1);
+    background-image: var(--gradientBg);
+}
+.suzyGradient{
+    --gradientBg: linear-gradient(45deg, #3274be, #d124ac);
+    background-image: var(--gradientBg);
+}
+.purpleGradient{
+    --gradientBg: linear-gradient(45deg, #4c2da0, #4c62c4);
+    background-image: var(--gradientBg);
+}
+.sweetMorningGradient{
+    --gradientBg: linear-gradient(45deg, #fc575e, #f7b42c);  
+    background-image: var(--gradientBg);
+}
+
+/* ---------------- BASIC --------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+
+    background: var(--video-bg);
+	background: var(--video-bg-gradient);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* ---------------Transitions------------------ */
+
+.pop-enter-from,.pop-leave-to {
+    transform: translateY(120%);
+}
+.pop-enter-to,.pop-leave-from {
+    transform: translateY(0%);
+}
+.pop-enter-active {
+    transition: transform 1.5s 0.2s ease;
+}
+.pop-leave-active {
+    transition: transform 1.5s ease;
+}
+
+.left-slide-enter-from,.left-slide-leave-to {
+    transform: translateX(-120%);
+}
+.left-slide-enter-to,.left-slide-leave-from {
+    transform: translateX(0%);
+}
+.left-slide-enter-active {
+    transition: transform 1.5s 0.2s ease;
+}
+.left-slide-leave-active {
+    transition: transform 1.5s ease;
+}
+
+
+/* Quick Access Transitions */
+
+.popQA-enter-from,.popQA-leave-to {
+    transform: translateY(55%) scale(0);
+}
+.popQA-enter-to,.popQA-leave-from {
+    transform: translateY(0%);
+}
+.popQA-enter-active {
+    transition: transform 1.5s 0.2s ease;
+}
+.popQA-leave-active {
+    transition: transform 1.5s ease;
+}
+
