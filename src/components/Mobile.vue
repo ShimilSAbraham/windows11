@@ -4,7 +4,14 @@
 		<div class="mobDate"> {{date}} </div>
 		<div class="mobDay">{{day}}</div>
 
-        <div class="mobMessage">Sorry, can't load windows 11 on mobile devices</div>	
+        <div class="cube">
+            <div class="front blue-l"></div>
+            <div class="side blue-d "></div>
+            <div class="top blue"></div>
+        </div>
+
+
+        <div class="mobMessage">Sorry, couldn't load windows 11 on this device ...</div>	
     </div>
 </template>
 
@@ -59,18 +66,22 @@ export default {
             margin-top: -5%;
         }
 
+        .mobile .cube{
+            position: absolute;
+            top: 45%;
+        }
+
         .mobile .mobMessage{
             position: absolute;
-            font-family: 'Roboto', sans-serif;
 
             bottom: 10%;
             font-size: 1.7rem;
-            font-weight: 600;
+            font-weight: 800;
             width: 70%;
             line-height: 2.3rem;
 
-            text-shadow: -3px -3px 2px #000;
-            color: #cacdd6d9;
+            text-shadow: -3px -3px 2px rgba(0, 0, 0, 0.247);
+            color: #cacdd6;
             letter-spacing: 1.5px;
         }
     }

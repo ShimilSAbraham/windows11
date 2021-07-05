@@ -1,20 +1,22 @@
 <template>
     <div class="moreOptions">
-        <!-- <div class="hiddenIcon">
-            <img src="vue.svg" alt="" />
+        <div class="hiddenIcon">
+            <img src="../../assets/svg/html5.svg" alt="html5" />
         </div>
         <div class="hiddenIcon">
-            <img src="react.svg" alt="" />
+            <img src="../../assets/svg/css3.svg" alt="css3" />
         </div>
         <div class="hiddenIcon">
-            <img src="angularreact.svg" alt="" />
+            <img src="../../assets/svg/javascript.svg" alt="javascript" />
+        </div>
+       <div class="hiddenIcon">
+           <img src="../../assets/svg/vue.svg" alt="vue" />
         </div>
         <div class="hiddenIcon">
-            <img src="javascript.svg" alt="" />
-        </div>
-        <div class="hiddenIcon"></div>
-        <div class="hiddenIcon"></div> -->
-  </div>
+           <img src="../../assets/svg/github.svg" alt="vue" />
+       </div>
+       <div class="hiddenIcon"></div>
+    </div>
 </template>
 
 <script>
@@ -24,15 +26,44 @@ export default {
 </script>
 
 <style>
-    .moreOptions{
+    .moreOptions {
         position: absolute;
-        top: -16.5vh;
-        right: 8.3vw;
-        border-radius: 5px;
-        width: 180px;
-        height: 120px;
-        background: var(--main-bg);
+        top: -235%;
+        left: -27%;
+
+        width: 150px;
+        height: 100px;
+        padding: 3px;  
+        border-radius: 8px;
+
+        background-color: var(--main-bg);
         border: var(--border);
-        z-index: -5;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-around;
+        flex-wrap: wrap; 
     }
+
+    .hiddenIcon {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: var(--bg);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .hiddenIcon:hover{
+        background-color: var(--quick-access-hover);
+    }
+
+    .hiddenIcon > img {
+        width:1.7rem;
+        height: 1.7rem;
+}
 </style>
