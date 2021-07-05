@@ -74,10 +74,11 @@ export default {
 
 /* quick access container */
 .quickAccess{
-  --main-bg: #171617f0;
-  --quick-access-hover: rgba(255, 255, 255, 0.15);
-  --fg: #d6d6d6;
-  --border: 2px solid rgba(49, 46, 46, 0.404);
+    --main-bg: #171617f0;
+    --quick-access-hover: rgba(255, 255, 255, 0.15);
+    --fg: #d6d6d6;
+    --border: 2px solid rgba(49, 46, 46, 0.404);
+    --bg: #201f20;
 
 }
 .access {
