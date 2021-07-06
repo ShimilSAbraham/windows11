@@ -55,7 +55,7 @@ export default {
             align-items: center;
             justify-content: space-evenly;
 
-            margin-top: 100px;
+            margin-top: 70px;
             font-size: 1.1rem;
             height: 80%;
         }
@@ -64,11 +64,9 @@ export default {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: #333;
             height: 30%;
         }
         .mobile .mobTime{
-            background: #000;
             font-size: 4.5rem;
             font-weight: 600;
         }
