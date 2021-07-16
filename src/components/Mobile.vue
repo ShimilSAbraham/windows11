@@ -55,7 +55,7 @@ export default {
             align-items: center;
             justify-content: space-evenly;
 
-            margin-top: 7px;
+            margin-top: 70px;
             font-size: 1.1rem;
             height: 80%;
         }
