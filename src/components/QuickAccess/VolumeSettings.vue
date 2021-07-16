@@ -38,7 +38,7 @@ export default {
 <style scoped>
 .volumeSettings {
   position: absolute;
-  bottom: 51px;
+  bottom: 101px;
   right: 5px;
   width: 385px;
   height: 120px;
@@ -164,5 +164,6 @@ export default {
 }
 .volumeSettings .volumeBottom > i:hover {
   color: #CFCFCF;
+  transform: rotate(180deg);
 }
 </style>
