@@ -43,7 +43,6 @@ export default {
   width: 385px;
   height: 120px;
   border-radius: 10px 10px 0 0;
-
   font-family: "Calibri", sans-serif;
   background-color: #171617f0;
   border-bottom: 3px solid #5f5f5f99;
@@ -52,7 +51,6 @@ export default {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .volumeSettings .volumeSettingsTitle {
   align-self: flex-start;
   margin-left: 1rem;
@@ -60,7 +58,6 @@ export default {
   font-weight: 400;
   color: #CFCFCF;
 }
-
 .volumeSettings .volumeControl {
   display: flex;
   flex-direction: row;
@@ -69,22 +66,18 @@ export default {
   width: 90%;
   height: 40%;
 }
-
 .volumeSettings .volumeControl > i {
   color: #CFCFCF;
   font-size: 1.5rem;
 }
-
 .volumeSettings .volumeControl .volumeSliderInput {
   width: 100%;
 }
-
 .volumeSettings .volumeControl .volumeValue {
   font-size: 1.4rem;
   color: #CFCFCF;
   width: 35px;
 }
-
 .volumeSettings .volumeSlider {
   height: 5px;
   width: 80%;
@@ -92,7 +85,6 @@ export default {
   border-radius: 5px;
   margin: 0 15px;
   background: #888888;
-
   position: relative;
   display: flex;
   align-items: center;
@@ -142,7 +134,6 @@ export default {
   background: var(--color);
   z-index: 1;
 }
-
 .volumeSettings .volumeBottom {
   position: absolute;
   bottom: -53px;
@@ -150,7 +141,6 @@ export default {
   width: 100%;
   border-radius: 0 0 10px 10px;
   background: #201f20;
-
   display: flex;
   padding-right: 20px;
   justify-content: flex-end;
