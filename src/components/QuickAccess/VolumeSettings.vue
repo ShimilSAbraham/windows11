@@ -164,5 +164,6 @@ export default {
 }
 .volumeSettings .volumeBottom > i:hover {
   color: #CFCFCF;
+  transform: rotate(180deg);
 }
 </style>
