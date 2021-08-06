@@ -38,12 +38,11 @@ export default {
 <style scoped>
 .volumeSettings {
   position: absolute;
-  bottom: 101px;
+  bottom: 100px;
   right: 5px;
   width: 385px;
   height: 120px;
   border-radius: 10px 10px 0 0;
-
   font-family: "Calibri", sans-serif;
   background-color: #171617f0;
   border-bottom: 3px solid #5f5f5f99;
@@ -52,7 +51,6 @@ export default {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .volumeSettings .volumeSettingsTitle {
   align-self: flex-start;
   margin-left: 1rem;
@@ -60,7 +58,6 @@ export default {
   font-weight: 400;
   color: #CFCFCF;
 }
-
 .volumeSettings .volumeControl {
   display: flex;
   flex-direction: row;
@@ -69,22 +66,18 @@ export default {
   width: 90%;
   height: 40%;
 }
-
 .volumeSettings .volumeControl > i {
   color: #CFCFCF;
   font-size: 1.5rem;
 }
-
 .volumeSettings .volumeControl .volumeSliderInput {
   width: 100%;
 }
-
 .volumeSettings .volumeControl .volumeValue {
   font-size: 1.4rem;
   color: #CFCFCF;
   width: 35px;
 }
-
 .volumeSettings .volumeSlider {
   height: 5px;
   width: 80%;
@@ -92,7 +85,6 @@ export default {
   border-radius: 5px;
   margin: 0 15px;
   background: #888888;
-
   position: relative;
   display: flex;
   align-items: center;
@@ -115,11 +107,11 @@ export default {
   border-radius: 50%;
   cursor: pointer;
   transition: box-shadow 0.5s;
-  background: #198f85;
+  background: var(--color);
   box-shadow: 0 0 0 6px #282828;
 }
 .volumeSettings .volumeSliderInput:active::-webkit-slider-thumb {
-  box-shadow: 0 0 0 6px #282828, 0 0 0 15px #198f8570;
+  box-shadow: 0 0 0 6px #282828, 0 0 0 15px var(--color-70);
 }
 .volumeSettings .volumeSliderInput::-moz-range-thumb {
   -webkit-appearance: none;
@@ -128,21 +120,20 @@ export default {
   border-radius: 50%;
   cursor: pointer;
   transition: box-shadow 0.5s;
-  background: #198f85;
+  background: var(--color);
   box-shadow: 0 0 0 6px #282828;
 }
 .volumeSettings .volumeSliderInput:active::-moz-range-thumb {
-  box-shadow: 0 0 0 6px #282828, 0 0 0 15px #198f8570;
+  box-shadow: 0 0 0 6px #282828, 0 0 0 15px var(--color-70);
 }
 .volumeSettings .volumeSliderProgress {
   position: absolute;
   left: 0;
   height: 100%;
   border-radius: 5px;
-  background: #198f85;
+  background: var(--color);
   z-index: 1;
 }
-
 .volumeSettings .volumeBottom {
   position: absolute;
   bottom: -53px;
@@ -150,7 +141,6 @@ export default {
   width: 100%;
   border-radius: 0 0 10px 10px;
   background: #201f20;
-
   display: flex;
   padding-right: 20px;
   justify-content: flex-end;
