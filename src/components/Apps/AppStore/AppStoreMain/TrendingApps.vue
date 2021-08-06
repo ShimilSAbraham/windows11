@@ -130,27 +130,21 @@ export default {
     position: absolute;
     content: var(--appName);
     font-size: 0.9rem;
-    color: #d6d6d6;
-    font-weight: 600;
-    top: 65%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.trendingApps .apps .item::before {
-    position: absolute;
-    content: var(--appName);
-    font-size: 0.9rem;
-    color: #d6d6d6;
+    color: #d6d6d6;   
+    text-align: center;
+    width: 100%;
     font-weight: 600;
     top: 65%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.apps .item::after {
+.trendingApps .apps .item::after {
     position: absolute;
     content: var(--desc);
     font-size: 0.7rem;
+    text-align: center;
+    width: 100%;
     color: #d6d6d699;
     font-weight: 500;
     top: 78%;
