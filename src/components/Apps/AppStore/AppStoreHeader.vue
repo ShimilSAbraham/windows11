@@ -130,7 +130,7 @@ export default {
 }
 .appStoreHeader .profile i {
   transform: scale(2.2);
-  color: var(--icons);
+  color: var(--color);
 }
 
 .appStoreHeader .control-btns {

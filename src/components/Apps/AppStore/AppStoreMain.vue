@@ -2,12 +2,12 @@
     <div class="appStoreMain">
         <div class="preview" :class="previewBackground">
             <div class="previewContainer">
-                <div @click="previewBackground='greenGradient'" class="previewItems greenGradient"></div>
-                <div @click="previewBackground='seeOffGradient'" class="previewItems seeOffGradient"></div>
-                <div @click="previewBackground='clearSkyGradient'" class="previewItems clearSkyGradient"></div>
-                <div @click="previewBackground='suzyGradient'" class="previewItems suzyGradient"></div>
-                <div @click="previewBackground='purpleGradient'" class="previewItems purpleGradient"></div>
-                <div @click="previewBackground='sweetMorningGradient'" class="previewItems sweetMorningGradient"></div>
+                <div @click="smooth('lucaPreview')" class="previewItems lucaPreview"></div>
+                <div @click="smooth('microsoft365Preview')" class="previewItems microsoft365Preview"></div>
+                <div @click="smooth('spotifyPreview')" class="previewItems spotifyPreview"></div>
+                <div @click="smooth('amazonPreview')" class="previewItems amazonPreview"></div>
+                <div @click="smooth('lottiePreview')" class="previewItems lottiePreview"></div>
+                <div @click="smooth('netflixPreview')" class="previewItems netflixPreview"></div>
             </div>
         </div>
         <TrendingApps />
@@ -23,8 +23,13 @@ export default {
         },
         data(){
             return{
-                previewBackground: 'greenGradient',
+                previewBackground: 'lucaPreview',
             }
+        },
+        methods: {
+            smooth(image) {
+                this.previewBackground = image;
+            },
         },
 }
 </script>
@@ -56,11 +61,13 @@ export default {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+
+    transition: background-image 0.1s ease-in-out;
 }
 
 .appStoreMain .previewContainer{
     width: 100%;
-    height: 40%;
+    height: 35%;
 
     display: flex;
     align-items: center;
@@ -70,6 +77,8 @@ export default {
     height: 85%;
     width: 16%;
     border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
     transition: 0.5s;
 
 }

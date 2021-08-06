@@ -38,7 +38,7 @@ export default {
 <style scoped>
 .volumeSettings {
   position: absolute;
-  bottom: 51px;
+  bottom: 100px;
   right: 5px;
   width: 385px;
   height: 120px;
@@ -115,11 +115,11 @@ export default {
   border-radius: 50%;
   cursor: pointer;
   transition: box-shadow 0.5s;
-  background: #198f85;
+  background: var(--color);
   box-shadow: 0 0 0 6px #282828;
 }
 .volumeSettings .volumeSliderInput:active::-webkit-slider-thumb {
-  box-shadow: 0 0 0 6px #282828, 0 0 0 15px #198f8570;
+  box-shadow: 0 0 0 6px #282828, 0 0 0 15px var(--color-70);
 }
 .volumeSettings .volumeSliderInput::-moz-range-thumb {
   -webkit-appearance: none;
@@ -128,18 +128,18 @@ export default {
   border-radius: 50%;
   cursor: pointer;
   transition: box-shadow 0.5s;
-  background: #198f85;
+  background: var(--color);
   box-shadow: 0 0 0 6px #282828;
 }
 .volumeSettings .volumeSliderInput:active::-moz-range-thumb {
-  box-shadow: 0 0 0 6px #282828, 0 0 0 15px #198f8570;
+  box-shadow: 0 0 0 6px #282828, 0 0 0 15px var(--color-70);
 }
 .volumeSettings .volumeSliderProgress {
   position: absolute;
   left: 0;
   height: 100%;
   border-radius: 5px;
-  background: #198f85;
+  background: var(--color);
   z-index: 1;
 }
 

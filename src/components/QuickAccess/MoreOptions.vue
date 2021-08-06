@@ -29,10 +29,10 @@ export default {
     .moreOptions {
         position: absolute;
         bottom: 51px;
-        right: 61%;
+        right: 68%;
 
-        width: 150px;
-        height: 100px;
+        width: 120px;
+        height: 80px;
         padding: 3px;  
         border-radius: 8px;
 
@@ -46,8 +46,8 @@ export default {
     }
 
     .hiddenIcon {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
         background-color: var(--bg);
         border-radius: 5px;
         display: flex;
@@ -63,7 +63,7 @@ export default {
     }
 
     .hiddenIcon > img {
-        width:1.7rem;
-        height: 1.7rem;
+        width:1.3rem;
+        height: 1.3rem;
 }
 </style>

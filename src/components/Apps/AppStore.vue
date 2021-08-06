@@ -26,7 +26,6 @@ export default {
 .appStore {
   /* variables */
   --inputs: #111111;
-  --icons: #198f85;
   --btn-hover: #72727259;
   --close-btn-hover: #c21212a4;
 
@@ -34,8 +33,8 @@ export default {
   --icons-active: #e4e4e4;
   /* variables */
 
-  width: 70vw;
-  height: 85vh;
+  width: 70%;
+  height: 670px;
   border-radius: 15px;
   background: #171617e0;
   position: absolute;

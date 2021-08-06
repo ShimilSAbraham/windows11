@@ -25,7 +25,7 @@ export default {
 <style scoped>
     /* taskbar div */
     .taskbar {
-    --taskbar-bg: rgba(18, 24, 39, 0.8);
+    --taskbar-bg: #121827cc;
 
     display: flex;
     justify-content: center;

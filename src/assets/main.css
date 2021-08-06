@@ -16,30 +16,43 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 
-.greenGradient{
-    --gradientBg: linear-gradient(45deg, #3b6d69, #2dae5f);
-    background-image: var(--gradientBg);
+.lucaPreview{
+    background-image: url('https://www.salamvancouver.com/wp-content/uploads/2021/07/34342-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: 102%;
+    background-position: center 20%;
 }
-.seeOffGradient{
-    --gradientBg: linear-gradient(45deg, #dd5a32, #df60a8);
-    background-image: var(--gradientBg);
+.microsoft365Preview{
+    background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWxNLk?ver=28fd&q=90&m=2&h=2147483647&w=2147483647&b=%23FFFFFFFF&aim=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
 }
-.clearSkyGradient{
-    --gradientBg: linear-gradient( 45deg,  #435bac, #178da1);
-    background-image: var(--gradientBg);
+.spotifyPreview{
+    background-image: url('https://digital.hbs.edu/platform-digit/wp-content/uploads/sites/2/2020/04/spotify-logo-1920x1080-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.suzyGradient{
-    --gradientBg: linear-gradient(45deg, #3274be, #d124ac);
-    background-image: var(--gradientBg);
+.amazonPreview{
+    background-image: url('https://www.androidcentral.com/sites/androidcentral.com/files/styles/w1600h900crop/public/article_images/2021/02/prime-video-logo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.purpleGradient{
-    --gradientBg: linear-gradient(45deg, #4c2da0, #4c62c4);
-    background-image: var(--gradientBg);
+.lottiePreview{
+    background-image: url('https://miro.medium.com/max/2800/1*PASOqnDQksOLAFjE5jEAGg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.sweetMorningGradient{
-    --gradientBg: linear-gradient(45deg, #fc575e, #f7b42c);  
-    background-image: var(--gradientBg);
+.netflixPreview{
+    background-image: url('https://res.cloudinary.com/practicaldev/image/fetch/s--THrf5Yjw--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n6brz4p7iq7j1mulo1nv.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
 
 /* ---------------- BASIC --------------------- */
 

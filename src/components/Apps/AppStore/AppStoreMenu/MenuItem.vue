@@ -27,7 +27,7 @@ export default {
   justify-content: center;
   cursor: pointer;
   align-items: center;
-  color: var(--icons);
+  color: var(--color);
   transition: 0.5s;
 }
 .menuItem:hover {
@@ -36,11 +36,11 @@ export default {
 
 .menuItemActive {
   position: relative;
-  background: var(--icons);
+  background: var(--color);
   color: var(--icons-active);
 }
 .menuItemActive:hover {
-  background: var(--icons);
+  background: var(--color);
 }
 .menuItemActive::before {
   content: "";

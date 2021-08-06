@@ -63,6 +63,9 @@ export default {
 <style>
 
 #app {
+  --color: #198f85;
+  --color-70: #198f8570;
+
   font-family: 'Open Sans','Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -78,7 +81,7 @@ export default {
 
 #app #vid{
 	position: absolute;
-	width: 80vw;
+	width: 80%;
 	left: 50%;
 	top: 55%;
 	transform: translate(-50%,-50%);	
