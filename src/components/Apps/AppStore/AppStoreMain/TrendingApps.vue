@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 .trendingApps {
-  height: 35%;
+  height: 40%;
   width: 98%;
   border-radius: 5px;
   box-sizing: border-box;
@@ -32,6 +32,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
 }
 .trendingApps .title {
   height: 20%;
@@ -79,12 +80,35 @@ export default {
   justify-content: space-around;
 }
 
+.trendingApps .apps .item:nth-child(1) {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png');
+}
+.trendingApps .apps .item:nth-child(2) {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png');
+}
+.trendingApps .apps .item:nth-child(3) {
+  background-image: url('https://dashboard.snapcraft.io/site_media/appmedia/2019/05/code_ozwVHSV.png');
+}
+.trendingApps .apps .item:nth-child(4) {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/1200px-Adobe_Photoshop_Lightroom_CC_logo.svg.png');
+}
+.trendingApps .apps .item:nth-child(5) {
+  background-image: url('https://cdn.sanity.io/images/599r6htc/production/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format');
+}
+
 .trendingApps .apps .item {
   background: rgba(10, 10, 10, 0.623);
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center 20%;
+
+
   height: 100%;
   width: 16%;
   border-radius: 5px;
-  transition: transform 0.5s, background-color 0.5s;
+  cursor: pointer;
+  transition: all 0.5s;
 
   /* box-sizing: border-box; */
 }

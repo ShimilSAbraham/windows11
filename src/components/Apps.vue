@@ -88,7 +88,7 @@ import AppStore from './Apps/AppStore.vue'
     --fg: #d6d6d6;
     --icon-color: white;
 
-    --border: 2px solid rgba(49, 46, 46, 0.404);
+    --border: 2px solid #312e2e67;
 
     width: 22vw;
     height: 100%;
